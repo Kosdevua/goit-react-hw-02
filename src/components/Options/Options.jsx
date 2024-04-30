@@ -1,20 +1,18 @@
 import s from './Options.module.css';
 
-const Options = ({ clicks }) => {
-  const hendleClick = click => {
-    return console.log(click);
-  };
+const Options = ({ clicks, handleClick }) => {
   return (
     <ul className={s.btnWrapper}>
-      {Object.keys(clicks).map(click => {
+      {Object.keys(clicks).map(el => {
         return (
-          <li key={click}>
+          <li key={el}>
             <button
               onClick={() => {
-                hendleClick(click);
+                handleClick(el);
+                // console.log(el);
               }}
             >
-              {click}
+              {el}
             </button>
           </li>
         );
