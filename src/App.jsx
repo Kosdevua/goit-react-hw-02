@@ -26,10 +26,18 @@ function App() {
   const positiveFeedback = Math.round((goodCount / total) * 100);
   // console.log(positiveFeedback);
 
+  // const resetBtn = () => {
+  //   return useState({
+  //     good: 0,
+  //     neutral: 0,
+  //     bad: 0,
+  //   });
+  // };
+
   return (
     <>
       <Description />
-      <Options clicks={clicks} handleClick={handleClick} />
+      <Options total={total} clicks={clicks} handleClick={handleClick} />
       {total > 0 ? (
         <Feedback
           total={total}
