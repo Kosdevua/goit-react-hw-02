@@ -4,10 +4,17 @@
   margin: 10px 0;
 }
 .btnWrapper button {
-  font-size: 12px;
+  font-size: 16px;
   background-color: lightgray;
   padding: 10px;
   border: 1px solid gray;
   border-radius: 5px;
   text-transform: capitalize;
+  transition: background-color 100ms ease-in-out;
+}
+.btnWrapper button:hover {
+  background-color: rgb(183, 183, 183);
+}
+.btnWrapper button:active {
+  background-color: rgb(146, 146, 146);
 }

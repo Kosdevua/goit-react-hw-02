@@ -1,3 +1,5 @@
+import s from './Feedback.module.css';
+
 const Feedback = ({ statistics, total, positiveFeedback }) => {
   //   console.log(statistics);
   return (
@@ -5,13 +7,20 @@ const Feedback = ({ statistics, total, positiveFeedback }) => {
       <ul>
         {statistics.map(([key, value]) => {
           return (
-            <li key={key}>
-              {key}: {value}
+            <li className={s.listItem} key={key}>
+              <p>
+                {key}:{value}
+              </p>
             </li>
           );
         })}
-        <li>total: {total}</li>
-        <li>positive: {positiveFeedback}</li>
+        <li className={s.listItem}>
+          <p>total: {total}</p>
+        </li>
+        <li className={s.listItem}>
+          {' '}
+          <p>positive: {positiveFeedback}</p>{' '}
+        </li>
       </ul>
     </div>
   );

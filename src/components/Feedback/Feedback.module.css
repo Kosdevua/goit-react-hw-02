@@ -1,0 +1,14 @@
+.listItem {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+}
+.listItem > p {
+  background-color: #f2eeee;
+  border: 1px solid #f2eeee;
+  border-radius: 5px;
+  min-width: 30px;
+  margin: 5px 0;
+  padding: 5px;
+}
