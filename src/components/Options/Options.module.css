@@ -4,17 +4,23 @@
   margin: 10px 0;
 }
 .btnWrapper button {
+  min-width: 80px;
   font-size: 16px;
   background-color: lightgray;
   padding: 10px;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   border-radius: 5px;
   text-transform: capitalize;
-  transition: background-color 100ms ease-in-out;
+  transition: border-radius 150ms cubic-bezier(0.86, 0, 0.07, 1),
+    color 250ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    background-color 150ms cubic-bezier(0.86, 0, 0.07, 1);
 }
 .btnWrapper button:hover {
   background-color: rgb(183, 183, 183);
 }
 .btnWrapper button:active {
-  background-color: rgb(146, 146, 146);
+  background-color: rgb(75, 75, 75);
+  color: #fff;
+  border-radius: 7px;
+  /* font-size: 18px; */
 }

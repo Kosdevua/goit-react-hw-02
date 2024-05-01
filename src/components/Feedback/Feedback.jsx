@@ -19,7 +19,7 @@ const Feedback = ({ statistics, total, positiveFeedback }) => {
         </li>
         <li className={s.listItem}>
           {' '}
-          <p>positive: {positiveFeedback}</p>{' '}
+          <p>positive: {positiveFeedback}%</p>{' '}
         </li>
       </ul>
     </div>
