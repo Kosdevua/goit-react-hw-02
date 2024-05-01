@@ -1,7 +1,8 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import Description from './components/Description/Description';
 import Options from './components/Options/Options';
 import Feedback from './components/Feedback/Feedback';
+import { useLocaleStorage } from './hooks/useLocaleStorage';
 
 const initialState = {
   good: 0,
@@ -10,7 +11,8 @@ const initialState = {
 };
 
 function App() {
-  const [clicks, setClicks] = useState(initialState);
+  const [clicks, setClicks] = useLocaleStorage('clicks', initialState);
+  console.log(clicks);
   console.log(initialState);
 
   const handleClick = click => {

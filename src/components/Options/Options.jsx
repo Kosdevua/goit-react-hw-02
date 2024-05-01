@@ -2,9 +2,9 @@ import s from './Options.module.css';
 import ResetButton from './ResetButton';
 
 const Options = ({ clicks, handleClick, total, resetBtn }) => {
-  console.log(total);
-  console.log(handleClick);
-  console.log(clicks);
+  // console.log(total);
+  // console.log(handleClick);
+  // console.log(clicks);
 
   return (
     <ul className={s.btnWrapper}>
@@ -14,7 +14,7 @@ const Options = ({ clicks, handleClick, total, resetBtn }) => {
             <button
               onClick={() => {
                 handleClick(el);
-                console.log(el);
+                // console.log(el);
               }}
             >
               {el}
